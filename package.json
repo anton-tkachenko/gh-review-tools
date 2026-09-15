@@ -1,0 +1,12 @@
+{
+  "name": "github-diff-defaults",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "package": "npm run build",
+    "test": "node --test",
+    "validate": "npm run test && npm run build"
+  }
+}

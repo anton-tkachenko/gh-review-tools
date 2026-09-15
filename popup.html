@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GitHub Diff Defaults</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <h1>Diff settings</h1>
+      <p class="description">Applied automatically on GitHub PR Changes pages.</p>
+
+      <label class="setting" for="hide-whitespace">
+        <span>
+          <strong>Hide whitespace changes</strong>
+          <small>Adds <code>w=1</code></small>
+        </span>
+        <input id="hide-whitespace" type="checkbox">
+      </label>
+
+      <label class="setting" for="hide-viewed-files">
+        <span>
+          <strong>Hide viewed files</strong>
+          <small>Adds <code>show-viewed-files=false</code></small>
+        </span>
+        <input id="hide-viewed-files" type="checkbox">
+      </label>
+
+    </main>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
